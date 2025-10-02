@@ -32,7 +32,7 @@ const Agency = () => {
     gsap.to(imageDivRef.current, {
       scrollTrigger: {
         trigger: imageDivRef.current,
-        markers: true,
+        // markers: true,
         start:"top 5%",
         end:'top -160%',
         pin: true,
@@ -76,9 +76,7 @@ const Agency = () => {
           </div>
         </div>
       </div>
-      <div id='page2' className=" h-screen">
-
-      </div>
+      <div id='page2' className="h-[40vh]"></div>
     </div>
   )
 }

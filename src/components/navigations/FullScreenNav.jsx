@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import { NavbarContext } from '../../context/NavContext'
+import { Link } from "react-router-dom";
 
 const FullScreenNav = () => {
     const fullNavLinksRef = useRef(null)
@@ -104,8 +105,10 @@ const FullScreenNav = () => {
                 </div>
 
                 <div className=' py-15'>
-                    <div className='link origin-top relative border-t-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-5 pt-3 uppercase'>Work</h1>
+                    <div className='link origin-top relative border-t-1 border-white cursor-pointer'>
+                        <div className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-5 pt-3 uppercase cursor-pointer'>
+                        <Link to="/work" >Work</Link>
+                        </div>
                         <div className='moveLink absolute h-29 text-black flex gap-6 top-0 bg-[#D3FD50]'>
                              <div className='moveX flex gap-6 items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center  g:leading-[0.8] lg:pt-5 pt-4 uppercase'>see everything</h2>
@@ -122,8 +125,10 @@ const FullScreenNav = () => {
                         </div> 
 
                     </div>
-                    <div className='link origin-top relative border-t-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-5 pt-3 uppercase'>Agency</h1>
+                    <div className='link origin-top relative border-t-1 border-white cursor-pointer'>
+                        <div className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-5 pt-3 uppercase cursor-pointer'>
+                        <Link to="/agency" >Agency</Link>
+                        </div>
                          <div className='moveLink absolute h-29 text-black flex gap-6 top-0 bg-[#D3FD50]'>
                             <div className='moveX flex gap-6 items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center  g:leading-[0.8] lg:pt-5 pt-4 uppercase'>see everything</h2>
@@ -140,8 +145,10 @@ const FullScreenNav = () => {
                         </div>  
 
                     </div>
-                    <div className='link origin-top relative border-t-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-5 pt-3 uppercase'>Contact</h1>
+                    <div className='link origin-top relative border-t-1 border-white cursor-pointer'>
+                        <div className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-5 pt-3 uppercase cursor-pointer'>
+                        <Link to="/" >Contact</Link>
+                        </div>
                         <div className='moveLink absolute h-29 text-black flex gap-6 top-0 bg-[#D3FD50]'>
                             <div className='moveX flex gap-6 items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center  g:leading-[0.8] lg:pt-5 pt-4 uppercase'>see everything</h2>
@@ -158,8 +165,10 @@ const FullScreenNav = () => {
                         </div> 
 
                     </div>
-                    <div className='link origin-top relative border-y-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-5 pt-3 uppercase'>Blogs</h1>
+                    <div className='link origin-top relative border-y-1 border-white cursor-pointer'>
+                        <div className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-5 pt-3 uppercase '>
+                        <Link to="/" >Blog</Link>
+                        </div>
                         <div className='moveLink absolute h-29 text-black flex gap-6 top-0 bg-[#D3FD50]'>
                             <div className='moveX flex gap-6 items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center  g:leading-[0.8] lg:pt-5 pt-4 uppercase'>see everything</h2>
